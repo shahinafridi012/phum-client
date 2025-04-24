@@ -43,32 +43,36 @@ const newArray = adminPaths2.reduce((acc, item) => {
     });
   }
 
+
+
   return acc;
 }, []);
 console.log(newArray);
-// function checkName(name) {
-//   const Name = name;
-//   console.log(Name);
-//   const SalmanSonName = name.split("");
-//   console.log(SalmanSonName);
-//   const lowercase = SalmanSonName.map(item => item.toLowerCase());
-//   console.log(lowercase);
-//   const runMap = lowercase.map((item) => item);
-//   console.log(runMap);
+
+// function monthlySavings(totalIncome, livingCost) {
+//   const upTo = 3000;
 
 //   if (
-//     runMap[5] === "a" ||
-//     runMap[5] === "y" ||
-//     runMap[5] === "e" ||
-//     runMap[5] === "o" ||
-//     runMap[5] === "u" ||
-//     runMap[5] === "w"
+//     totalIncome[0] >= upTo ||
+//     totalIncome[1] >= upTo ||
+//     totalIncome[2] >= upTo
 //   ) {
-//     console.log("good name");
-//   } else {
-//     console.log("bad name");
+//     const incomeTax = totalIncome[(0, 1, 2)] * 0.2; // 20% tax
+//     const afterTaxIncome = totalIncome[(0, 1, 2)] - incomeTax;
+
+//     console.log("Tax:", incomeTax);
+//     console.log("Income after tax:", afterTaxIncome);
+
+//     const Savings = afterTaxIncome - livingCost;
+//     if (Savings < 0) {
+//       console.log("earn more");
+//     }   m   
+//     const monthlyTotalIncome =
+//       totalIncome[0] + totalIncome[1] + totalIncome[2] - livingCost;
+//     console.log(monthlyTotalIncome);
 //   }
 // }
 
-// checkName("shaHina");
+// monthlySavings( [900, 2700, 3400],100);
+
 
